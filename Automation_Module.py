@@ -20,10 +20,10 @@ class automation():
         self.driver.get('https://www.facebook.com')
 
         element_email = self.driver.find_elements_by_xpath('//*[@id="email"]')
-        element_email[0].send_keys(user_name)
+        element_email[0].send_keys('FACEBOOK USERNAME')
 
         element_password = self.driver.find_elements_by_xpath('//*[@id="pass"]')
-        element_password[0].send_keys('Your FaceBook Password')
+        element_password[0].send_keys('FACEBOOK PASSWORD')
         element_password[0].send_keys(Keys.RETURN)
 
     def google(self,search):
